@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    xmlns:constraint="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_main_radio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.themindstudios.circlecontrolview.widget.CircleControlView
+        android:id="@+id/radio_cv_fm"
+        android:background="@drawable/bg_btn_radio_default"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        constraint:layout_constraintTop_creator="1"
+        constraint:layout_constraintRight_creator="1"
+        constraint:layout_constraintRight_toRightOf="parent"
+        constraint:layout_constraintLeft_creator="1"
+        constraint:layout_constraintLeft_toLeftOf="parent"
+        constraint:layout_constraintTop_toTopOf="parent"
+        constraint:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:layout_marginBottom="8dp"
+        constraint:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/radio_tv_fm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        constraint:layout_constraintBottom_toBottomOf="@+id/radio_cv_fm"
+        constraint:layout_constraintLeft_toLeftOf="@+id/radio_cv_fm"
+        constraint:layout_constraintRight_toRightOf="@+id/radio_cv_fm"
+        constraint:layout_constraintTop_toTopOf="@+id/radio_cv_fm"
+        constraint:layout_constraintVertical_bias="0.502" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Station"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        constraint:layout_constraintBottom_toTopOf="@+id/radio_tv_fm"
+        constraint:layout_constraintHorizontal_bias="0.5"
+        constraint:layout_constraintLeft_toLeftOf="@+id/radio_tv_fm"
+        constraint:layout_constraintRight_toRightOf="@+id/radio_tv_fm" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="FM"
+        android:textColor="@android:color/white"
+        constraint:layout_constraintLeft_toLeftOf="@+id/radio_tv_fm"
+        constraint:layout_constraintRight_toRightOf="@+id/radio_tv_fm"
+        constraint:layout_constraintTop_toBottomOf="@+id/radio_tv_fm"
+        constraint:layout_constraintHorizontal_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        circle:layout_constraintBottom_toBottomOf="parent"
+        circle:layout_constraintHorizontal_bias="0.0"
+        circle:layout_constraintLeft_toLeftOf="parent"
+        circle:layout_constraintRight_toRightOf="parent"
+        circle:srcCompat="@drawable/bottom_view" />
+
+</android.support.constraint.ConstraintLayout>
