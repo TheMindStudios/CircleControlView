@@ -16,7 +16,7 @@
 
   1. Import `circlecontrolview` module to your project
 
-    ![alt tag](https://git.themindstudios.com/android/circleview/blob/dev/import_module.jpg?raw=true)
+    ![alt tag](https://github.com/TheMindStudios/CircleControlView/blob/master/import_module.jpg?raw=true)
     
  
   2. Add following line to your `settings.gradle` file
@@ -52,7 +52,7 @@
             
             ...
             
-        private CircleControlView.OnValueChangedCallback onValueChangedCallback = new CircleControlView.OnValueChangedCallback() {
+        private CircleControlView.OnValueChangedCallback onValueChangedCallback = new        CircleControlView.OnValueChangedCallback() {
             @Override
             public void onValueChanged(int value) {
                 ...
