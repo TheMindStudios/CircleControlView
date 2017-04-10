@@ -30,7 +30,7 @@
         dependencies {
         ...
         compile project(':circlecontrolview')
-    }
+        }
       ```
   3. Initialize `CircleControlView` from code
 
