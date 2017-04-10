@@ -16,8 +16,7 @@
 
   1. Import `circlecontrolview` module to your project
 
-    ![alt tag](https://github.com/TheMindStudios/CircleControlView/blob/master/import_module.jpg?raw=true)
-    
+![alt tag](https://github.com/TheMindStudios/CircleControlView/blob/master/import_module.jpg?raw=true) 
  
   2. Add following line to your `settings.gradle` file
 
